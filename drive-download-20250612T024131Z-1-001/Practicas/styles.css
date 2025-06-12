@@ -1,0 +1,24 @@
+/** Esta es una hoja de estilos externa **/
+
+body {
+    background-color: #F6DDD7;
+    font-family: sans-serif; /* Opcional: fuente más estética */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#contenido {
+    border: 2px solid #F6DDD7;
+    width: 500px;
+    margin: 150px auto;
+    padding: 20px;
+    background-color: white; /* Opcional: hace destacar el contenido */
+    border-radius: 10px;      /* Opcional: bordes redondeados */
+}
+
+#botones { 
+    width: 250px;
+    margin: 25px auto;
+    text-align: center; /* Opcional: centrar imágenes o botones dentro */
+}

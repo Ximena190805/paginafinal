@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Galería de Cerditos</title> <!-- Título más descriptivo -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Adorable galería de cerditos: oinky, pinky, chuleta y bacon">
+  <link rel="stylesheet" type="text/css" href="../styles.css">
+  <link rel="icon" type="image/x-icon" href="../../favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+     background: #f6ddd7;
+      font-family: "DM Sans", sans-serif;
+      margin: 0;
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+
+    h1 {
+      text-align: center;
+      color: #5a2d82;
+      margin-bottom: 30px;
+      font-size: 2.5rem;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+    }
+
+    .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .gallery-card {
+      background-color: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .gallery-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+    }
+
+    .gallery-img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .gallery-card:hover .gallery-img {
+      transform: scale(1.05);
+    }
+
+    .gallery-desc {
+      padding: 15px;
+      text-align: center;
+      background: white;
+      font-weight: 600;
+      color: #5a2d82;
+      font-size: 1.2rem;
+      margin-top: auto;
+    }
+
+    @media (max-width: 600px) {
+      .gallery-container {
+        grid-template-columns: 1fr;
+      }
+      
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Galería de Cerditos </h1>
+
+  <div class="gallery-container">
+    <div class="gallery-card">
+      <a target="_blank" href="img/pig1.jpg">
+        <img src="img/pig1.jpg" alt="Cerdito oinky sonriendo" class="gallery-img">
+      </a>
+      <div class="gallery-desc">Oinky</div>
+    </div>
+
+    <div class="gallery-card">
+      <a target="_blank" href="img/pig2.jpg">
+        <img src="img/pig2.jpg" alt="Cerdito pinky con flores" class="gallery-img">
+      </a>
+      <div class="gallery-desc">Pinky</div>
+    </div>
+
+    <div class="gallery-card">
+      <a target="_blank" href="img/pig3.jpg">
+        <img src="img/pig3.jpg" alt="Cerdito chuleta durmiendo" class="gallery-img">
+      </a>
+      <div class="gallery-desc">Chuleta</div>
+    </div>
+
+    <div class="gallery-card">
+      <a target="_blank" href="img/pig4.jpg">
+        <img src="img/pig4.jpg" alt="Cerdito bacon jugando" class="gallery-img">
+      </a>
+      <div class="gallery-desc">Bacon</div>
+    </div>
+  </div>
+
+</body>
+</html>
